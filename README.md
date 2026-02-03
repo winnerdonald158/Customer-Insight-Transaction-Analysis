@@ -1,2 +1,2 @@
-# Customer-Insight-Transaction-Analysis
-This project analyzes customer transaction data to uncover spending patterns, customer value, and behavioral trends.
+Customer-Insight-Transaction-Analysis
+This analysis focuses on  using SQL and Power BI to uncover transaction trends, revenue patterns, and customer activity over time.
