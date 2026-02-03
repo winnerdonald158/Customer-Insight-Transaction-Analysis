@@ -1,0 +1,14 @@
+Monthly Revenue
+SELECT DATE_FORMAT(order_date, '%Y-%m') AS month,
+       SUM(sales) AS monthly_revenue
+FROM customer_insight
+GROUP BY month
+ORDER BY month;
+
+Number of Transactio
+SELECT COUNT(*) AS number_of_transactions
+FROM customer_insight;
+
+Total active customer
+SELECT COUNT(DISTINCT customer_id) AS active_customers
+FROM customer_insight;
