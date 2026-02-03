@@ -5,10 +5,24 @@ FROM customer_insight
 GROUP BY month
 ORDER BY month;
 
-Number of Transactio
+Number of Transaction
 SELECT COUNT(*) AS number_of_transactions
 FROM customer_insight;
 
 Total active customer
 SELECT COUNT(DISTINCT customer_id) AS active_customers
 FROM customer_insight;
+
+10 top spending customers
+SELECT 
+    customer_id,
+    SUM(transaction_amount) AS total_spent
+FROM customer_insight
+GROUP BY customer_id
+ORDER BY total_spent DESC
+LIMIT 10;
+
+Total number of transactions
+SELECT COUNT(*) AS total_number_of transaction
+FROM customer_insight
+GROUP BY transaction;
