@@ -25,4 +25,4 @@ LIMIT 10;
 Total number of transactions
 SELECT COUNT(*) AS total_number_of transaction
 FROM customer_insight
-GROUP BY transaction;
+GROUP BY transaction
